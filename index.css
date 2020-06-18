@@ -51,3 +51,46 @@ body {
 .btn-add:hover {
   background-color: rgba(256, 256, 256, 0.2);
 }
+
+.task-list {
+  margin: 0 auto 0 auto;
+  padding-top: 45px;
+  width: 60vw;
+  height: 80vh;
+  background-color: rgb(255, 255, 255);
+  border-right-width: 10px;
+  border-right-color: rgba(0, 0, 0, 0.5);
+  border-left-width: 10px;
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.task {
+  padding: 40px;
+  border-bottom-style: solid;
+  border-bottom-width: 1.2px;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.task:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.task-name {
+  float: left;
+  font-size: 20px;
+}
+
+.del-btn {
+  float: right;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+  border-width: 0;
+}
+
+.del-btn:hover {
+  cursor: pointer;
+  background-color: rgba(221, 75, 69, 0.4);
+}
