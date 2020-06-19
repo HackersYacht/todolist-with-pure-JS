@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To do list</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <!--Header with input-->
+      <div class="header">
+        <input placeholder="add a task" class="search-input" />
+        <button class="btn-add">+</button>
+      </div>
+
+      <!--list of tasks-->
+      <div class="task-list">
+        <div class="task">
+          <div class="task-name">
+            Third task
+          </div>
+          <button class="del-btn">X</button>
+        </div>
+
+        <div class="task">
+          <div class="task-name">
+            Second task
+          </div>
+          <button class="del-btn">X</button>
+        </div>
+
+        <div class="task">
+          <div class="task-name">
+            First task
+          </div>
+          <button class="del-btn">X</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const searchInput = document.getElementsByClassName("search-input")[0]; //added [0] since it returns an array, we want the first elment
+      console.log("[Here is our input]");
+      console.log(searchInput);
+
+      searchInput.addEventListener("input", e => {
+        console.log(e.target.value);
+      });
+    </script>
+  </body>
+</html>
